@@ -5,7 +5,7 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH='/root/.oh-my-bash'
+export OSH='/home/sean/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -131,12 +131,11 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-
-alias update='emerge --ask --verbose --update --deep --newuse @world'
-alias depclean='emerge --ask --depclean'
-alias obsolete='eix-test-obsolete'
-alias webrsync='emerge-webrsync'
-alias upgrade='emerge --ask -uDU --keep-going --with-bdeps=y @world'
-alias conf='dispatch-conf'
-alias changeduse='emerge --ask --changed-use --deep @world'
-alias sync='emerge --sync'
+#
+# Custom Aliases
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias clean="yay -Sc && sudo pacman -Scc"
+alias purge="sudo pacman -Rns $(pacman -Qtdq) ; sudo fstrim -av"
+alias update="yay -Syu"
+alias ls='lsd'
+alias py='python3'
