@@ -28,3 +28,4 @@ Read the compile error of dwm, dmenu and slstatus. It indicates missing librarie
 # Mentions
 - This works on basically any distro
 - I use this on multiple of my gentoo machines
+- Have a look at the wallpapers and copy them to .local/share/bg
