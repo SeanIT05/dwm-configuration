@@ -5,20 +5,18 @@ This is MY WAY of installing and configuring dwm on my Archlinux and Gentoo mach
 
 # Dependencies
 Most of these are in the standard Arch/Gentoo repositories. If not please have a look in the [AUR](https://aur.archlinux.org/).
-- xsetroot
 - Xorg
-- hack font
-- dmenu
-- dwm
+- Jet Brains Mono font
 - alacritty
-- bashtop
-- setxkbmap
+- htop
+- setxkbmap 
 - picom
-- dunst
-- oh my bash
-- nitrogen/feh
+- feh
 - Nerd Font Symbols
-- lsd
+- libXft (gentoo)
+- libXinerama (gentoo)
+
+Read the compile error of dwm, dmenu and slstatus. It indicates missing libraries.
 
 # Preview
 ![](https://i.imgur.com/BYY53h4.png)
@@ -28,5 +26,5 @@ Most of these are in the standard Arch/Gentoo repositories. If not please have a
 
 ---
 # Mentions
-- I use DT's configuration for Alacritty, which you can find [here](https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/alacritty/alacritty.yml)
-- It looks exactly the same on my Gentoo machine. Iam quite new to Gentoo, so the make.conf probably won't look very professional.
+- This works on basically any distro
+- I use this on multiple of my gentoo machines
