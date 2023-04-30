@@ -21,9 +21,8 @@ Most of these are in the standard Arch/Gentoo repositories. If not please have a
 - lsd
 
 # Preview
-![](https://i.imgur.com/fM6txgH.jpg)
-![](https://i.imgur.com/vdcFnWu.png)
-
+![](https://i.imgur.com/BYY53h4.png)
+![](https://i.imgur.com/z9Z5IJB.jpg)
 
 #### The goal is for it to be minimal...
 
