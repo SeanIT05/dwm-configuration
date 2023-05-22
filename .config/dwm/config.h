@@ -6,8 +6,8 @@ static const unsigned int gappx     = 5;        /* gaps size between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=14", "fontawesome:size=13" };
-static const char dmenufont[]       = "monospace:size=13";
+static const char *fonts[]          = { "JetbrainsMono:size=14", "fontawesome:size=12" };
+static const char dmenufont[]       = "JetbrainsMono:size=14";
 //background color
 static const char col_gray1[]       = "#222222";
 //inactive window border color
