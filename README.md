@@ -19,8 +19,8 @@ Most of these are in the standard Arch/Gentoo repositories. If not please have a
 Read the compile error of dwm, dmenu and slstatus. It indicates missing libraries.
 
 # Preview
-![](https://i.imgur.com/BYY53h4.png)
-![](https://i.imgur.com/z9Z5IJB.jpg)
+![](https://i.imgur.com/xlXHMQh.png)
+![](https://i.imgur.com/Sr6ugwX.png)
 
 #### The goal is for it to be minimal...
 
