@@ -5,16 +5,7 @@ This is MY WAY of installing and configuring dwm on my Archlinux and Gentoo mach
 
 # Dependencies
 Most of these are in the standard Arch/Gentoo repositories. If not please have a look in the [AUR](https://aur.archlinux.org/).
-- Xorg
-- Jet Brains Mono font
-- alacritty
-- htop
-- setxkbmap 
-- picom
-- feh
-- Nerd Font Symbols
-- libXft (gentoo)
-- libXinerama (gentoo)
+## See dependencies list
 
 Read the compile error of dwm, dmenu and slstatus. It indicates missing libraries.
 
