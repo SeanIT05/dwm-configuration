@@ -1,17 +1,17 @@
 #!/bin/sh
- 
- picom -f &
- unclutter &
- slstatus &
- feh --bg-tile .local/share/bg
 
-
-
- # Loop
+feh --bg-scale --randomize ~/Wallpapers/* &
+picom -f --no-vsync &
+pulseaudio --start &
+playerctld daemon
+slstatus &
+unclutter &
+# setxkbmap (yourkeyboardlanguage)
+# Loop
  #while true; do
- #	dwm >/dev/null 2>&1
+ #      dwm >/dev/null 2>&1
  #done
 
  # Start DWM
- exec dwm
+exec dbus-launch dwm
 
