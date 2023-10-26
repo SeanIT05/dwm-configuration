@@ -13,5 +13,5 @@ unclutter &
  #done
 
  # Start DWM
+redshift &
 exec dbus-launch dwm
-
