@@ -7,7 +7,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono NL:pixelsize=14:antialias=true:autohint=true" };
-static const char dmenufont[]       = "JetBrains Mono NL:pixelsize=14:antialias=true:autohint=true";
+//static const char dmenufont[]       = "JetBrains Mono NL:pixelsize=14:antialias=true:autohint=true";
 //background color
 static const char col_gray1[]       = "#222222";
 //inactive window border color
@@ -63,7 +63,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+//static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "rofi", "-theme", "dracula", "-show", "drun", "-icon-theme", "Papirus", "-show-icons", NULL };
 static const char *monitor[] = { "/usr/bin/htop", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *upvol[]   = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
@@ -117,7 +118,7 @@ static Key keys[] = {
 	{ 0,                            XF86XK_MonBrightnessUp,    spawn,      {.v = brightnessupcmd } },
 	{ 0,                            XF86XK_MonBrightnessDown,  spawn,      {.v = brightnessdowncmd } },
   { 0,            XK_Print,   spawn,      {.v = scrotcmd } },
-  { ShiftMask,                    XK_Print,   spawn,      {.v = scrotfocusedcmd } },
+  { MODKEY|ShiftMask,                    XK_Print,   spawn,      {.v = scrotfocusedcmd } },
   { MODKEY,                       XK_s,   spawn,      SHCMD("sleep 1s;scrot --select") },
   { MODKEY,              		      XK_n,      shiftview,  	   { .i = +1 } },
 	{ MODKEY,              		      XK_b,      shiftview,      { .i = -1 } },
