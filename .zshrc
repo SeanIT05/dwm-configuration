@@ -75,4 +75,8 @@ bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 
 # Load syntax highlighting; should be last.
-source /home/sean/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/sean/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+startx
+fi
