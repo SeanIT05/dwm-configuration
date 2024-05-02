@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 5;        /* border pixel size of windows */
+static const unsigned int borderpx  = 3;        /* border pixel size of windows */
 static const unsigned int gappx     = 5;        /* gaps size between windows */
 static const unsigned int gappih    = 30;
 static const unsigned int gappiv    = 30;
@@ -14,12 +14,12 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono NL:pixelsize=14:antialias=true:autohint=true" };
 //static const char dmenufont[]       = "JetBrains Mono NL:pixelsize=14:antialias=true:autohint=true";
 //background color
-static const char col_gray1[]       = "#202a36";
-static const char col_gray2[]       = "#644475";
-static const char col_gray3[]       = "#f8f8f2";
-static const char col_gray4[]       = "#202a36";
-static const char col_gray5[]       = "#FFD866";
-static const char col_cyan[]        = "#bf93f9";
+static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#d8e2ed";
+static const char col_gray4[]       = "#d8e2ed";
+static const char col_gray5[]       = "#757a80";
+static const char col_cyan[]        = "#7575a3";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -155,4 +155,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
