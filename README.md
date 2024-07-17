@@ -11,7 +11,7 @@ Read the compile error of dwm, dmenu and slstatus. It indicates missing librarie
 
 # Preview
 
-![Preview](https://hackmd.io/_uploads/H1Y8MYBdC.png)
+![Alt text](assets/screenshot.png)
 
 #### The goal is for it to be minimal...
 
