@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel size of windows */
-static const unsigned int gappx     = 5;        /* gaps size between windows */
+static const unsigned int borderpx  = 2;        /* border pixel size of windows */
+static const unsigned int gappx     = 6;        /* gaps size between windows */
 static const unsigned int gappih    = 30;
 static const unsigned int gappiv    = 30;
 static const unsigned int gappoh    = 30;
@@ -19,7 +19,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#d8e2ed";
 static const char col_gray4[]       = "#d8e2ed";
 static const char col_gray5[]       = "#757a80";
-static const char col_cyan[]        = "#7575a3";
+static const char col_cyan[]        = "#aa6292";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -67,7 +67,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 //static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *dmenucmd[] = { "rofi", "-theme", "dracula", "-show", "drun", "-icon-theme", "Papirus", "-show-icons", NULL };
-static const char *monitor[] = { "/usr/bin/htop", NULL };
+static const char *monitor[] = { "/usr/bin/btop", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *upvol[]   = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
 static const char *downvol[] = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
