@@ -21,6 +21,7 @@ This is MY WAY of installing and configuring dwm on my Gentoo machine. Therefore
 - [vim](https://www.vim.org/) (Vim is a highly configurable text editor)
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch) (An actively maintained, feature-rich and performance oriented, neofetch like system information tool. )
 - [playerctl](https://github.com/altdesktop/playerctl) (🎧 mpris media player command-line controller)
+- [feh](https://feh.finalrewind.org/) (feh is a light-weight, configurable and versatile image viewer.)
 
 ### Gentoo Software
 - [eix](https://wiki.gentoo.org/wiki/Eix)
