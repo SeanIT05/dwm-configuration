@@ -49,7 +49,7 @@ blinking = "Always"
 shape = "Beam"
 
 [font]
-size = 10.0
+size = 12.0
 
 [font.glyph_offset]
 x = 0
@@ -63,7 +63,7 @@ style = "Regular"
 history = 3000
 
 [window]
-opacity = 0.9
+opacity = 1
 
 [window.padding]
 x = 4
