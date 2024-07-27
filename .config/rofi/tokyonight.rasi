@@ -1,5 +1,5 @@
 * {
-  font:   "Jetbrains Mono 11";
+  font:   "terminus 11";
 
   bg0     : #1a1b26;
   bg1     : #1f2335;
