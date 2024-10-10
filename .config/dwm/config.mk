@@ -35,4 +35,4 @@ LDFLAGS  = ${LIBS}
 #LDFLAGS = ${LIBS}
 
 # compiler and linker
-CC = /usr/lib/llvm/18/bin/clang
+CC = cc
