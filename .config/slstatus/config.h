@@ -66,10 +66,10 @@ static const struct arg args[] = {
 	//{ datetime, "%s",           "%F %T" },
 	//{ wifi_perc, "W: (%3s%% on ", "enp6s0" },
 	{ run_command, "[󰕾 %4s] ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-    { keymap, "[󰌌 %s] ", NULL       },
-    { cpu_perc, "[󰻠 %s%%] ", NULL	      },
+  { keymap, "[󰌌 %s] ", NULL       },
+  { disk_perc, "[󰋊 %s%%] ", "/"},  
+  { cpu_perc, "[󰻠 %s%%] ", NULL	      },
 	{ ram_perc, "[󰐰 %s%%] ", NULL	      },
-    { kernel_release, "[ %s] ", NULL       },
-    { datetime, "%s",           "%a %b %d %r" },
+  { datetime, "%s",           "%a %b %d %r" },
 };
 
