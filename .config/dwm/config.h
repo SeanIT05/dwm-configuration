@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel size of windows */
-static const unsigned int gappx     = 6;        /* gaps size between windows */
+static const unsigned int borderpx  = 3;        /* border pixel size of windows */
+static const unsigned int gappx     = 8;        /* gaps size between windows */
 static const unsigned int gappih    = 30;
 static const unsigned int gappiv    = 30;
 static const unsigned int gappoh    = 30;
@@ -11,7 +11,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static                int smartgaps = 0;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "terminus:pixelsize=14:antialias=true:autohint=true" };
+static const char *fonts[]          = { "JetBrains Mono NL:pixelsize=14:antialias=true:autohint=true" };
 //static const char dmenufont[]       = "JetBrains Mono NL:pixelsize=14:antialias=true:autohint=true";
 //background color
 static const char col_gray1[]       = "#222222";
@@ -19,7 +19,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#d8e2ed";
 static const char col_gray4[]       = "#d8e2ed";
 static const char col_gray5[]       = "#757a80";
-static const char col_cyan[]        = "#36454F";
+static const char col_cyan[]        = "#424356";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/bash", "-c", cmd, NULL } }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
@@ -86,9 +86,9 @@ static const char *scrotfocusedcmd[]  = { "scrot", "--focused", NULL };
 static char *endx[] = { "/bin/sh", "-c", "endx", "externalpipe", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_space,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,	                    XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,                           XK_Escape, spawn,          {.v = monitor } },
+	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
+	{ MODKEY,	                      XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_b, spawn,          {.v = monitor } },
 	{ MODKEY,                       XK_t,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -98,7 +98,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_z,	   zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,	                    XK_q,      killclient,     {0} },
+	{ MODKEY,	                      XK_q,      killclient,     {0} },
 	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
@@ -123,7 +123,7 @@ static Key keys[] = {
   { MODKEY|ShiftMask,                    XK_Print,   spawn,      {.v = scrotfocusedcmd } },
   { MODKEY,                       XK_s,   spawn,      SHCMD("sleep 1s;scrot --select") },
   { MODKEY,              		      XK_n,      shiftview,  	   { .i = +1 } },
-	{ MODKEY,              		      XK_b,      shiftview,      { .i = -1 } },
+	{ MODKEY,              		      XK_w,      shiftview,      { .i = -1 } },
   { MODKEY,                       XK_p,     spawn,          {.v = upvol   } },
   { MODKEY,                       XK_o,     spawn,          {.v = downvol } },
   { MODKEY,                       XK_y,     spawn,          {.v = mutevol } },
