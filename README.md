@@ -5,7 +5,7 @@ This is MY WAY of installing and configuring dwm on my Gentoo machine. Therefore
 
 # Preview
 
-![Alt text](assets/screenshot.png)
+![Alt text](assets/rice.png)
 
 ---
 # Used Software
